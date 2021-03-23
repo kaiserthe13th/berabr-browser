@@ -82,8 +82,8 @@ class MainWindow(QMainWindow):
 		self.shortcutbackBtn = QShortcut(QKeySequence("Alt+Right"), self)
 		self.shortcutbackBtn.activated.connect(self.browser.forward)
 
-		self.shortcutbackBtn = QShortcut(QKeySequence("Ctrl+R"), self)
-		self.shortcutbackBtn.activated.connect(self.browser.reload)
+		self.shortcutrefresh = QShortcut(QKeySequence("Ctrl+R"), self)
+		self.shortcutrefresh.activated.connect(self.browser.reload)
 
 	def themeIcon(self, icon):
 		if icon == "settings":
